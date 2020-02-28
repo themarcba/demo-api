@@ -10,7 +10,7 @@ const server = http.createServer(app)
 const publicPath = path.join(__dirname, '../public')
 app.use(express.static(publicPath))
 
-const port = process.env.PORT
+const port = 8081
 server.listen(port, () => {
     console.log(`Server started on port ${port}`);
 })
